@@ -5,8 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                  }
-            steps {
                 sh 'mvn clean package'
                 }
             post {
@@ -27,4 +25,5 @@ pipeline {
             }
         }
     }
+
 }
