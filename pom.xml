@@ -20,16 +20,8 @@
     <module>server</module>
     <module>webapp</module>
   </modules>
-
+  
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
-         
-   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://18.206.251.138:8081/repository/maven-snapshots/</url>
@@ -39,6 +31,8 @@
       <url>hhttp://18.206.251.138:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
+         
+   
          
 
   <build>
