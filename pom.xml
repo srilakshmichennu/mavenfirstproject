@@ -19,22 +19,19 @@
   <modules>
     <module>server</module>
     <module>webapp</module>
-  </modules>
-  
+  </modules> 
  <distributionManagement>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://18.206.251.138:8081/nexus/content/repositories/maven-oracle/</url>
-    </snapshotRepository>
-    <repository>
-      <id>nexus-releases</id>
-      <url>http://18.206.251.138:8081/nexus/content/repositories/maven-oracle/</url>
-    </repository>
-  </distributionManagement>
-         
-   
-         
-
+   <repository>
+      <id>deployment</id>
+      <name>Internal Releases</name>
+      <url>http://18.206.251.138:8081/nexus/content/repositories/mavenrepository/</url>
+   </repository>
+   <snapshotRepository>
+      <id>deployment</id>
+      <name>Internal Releases</name>
+      <url>http://18.206.251.138:8081/nexus/content/repositories/mavensnapshots/</url>
+   </snapshotRepository>
+</distributionManagement>
   <build>
     <plugins>
       <plugin>
